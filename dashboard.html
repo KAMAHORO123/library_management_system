@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Library Management System</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      header {
+        background-color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav {
+        background-color: #eee;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+      nav a:hover {
+        background-color: #ddd;
+      }
+      .container {
+        max-width: 960px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      .admin-dashboard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .dashboard-item {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1 1 25%; /* Adjust flex to control column layout */
+      }
+      .dashboard-item h2 {
+        margin-top: 0;
+      }
+      .dashboard-item svg {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+      }
+      .dashboard-item svg path {
+        fill: #e29f22; /* Green color for the icon */
+      }
+      .logout-button {
+        background-color: #21c1c9; /* Red color for the button */
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 1rem 0;
+        display: block;
+      }
+      .logout-button:hover {
+        background-color: #0f6d79; /* Darker red on hover */
+      }
+      p a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Online Library Management System</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="read.php">Books</a></li>
+        <li><a href="#">Issue Books</a></li>
+        <li><a href="#">Reg Students</a></li>
+        <li><a class="logout-button" href="create.html">Add a Book</a></li>
+        <li><a class="logout-button" href="./login.html">Log me out</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h2>Admin Dashboard</h2>
+      <div class="admin-dashboard">
+        <div class="dashboard-item">
+          <svg>
+            <path d="M4 6h16v12H4V6zM8 8h8v4H8V8zm0 6h8v4H8v-4z" />
+          </svg>
+          <h2>9</h2>
+          <p><a href="read.php">Books listed</a></p>
+        </div>
+        <div class="dashboard-item">
+          <svg>
+            <path
+              d="M12 4V2H2v2h10zm-2 5h6v2H10V9zm4 3H2v2h10V12zM10 15h6v2H10v-2zm-8 2H2v2h10v-2z"
+            />
+          </svg>
+          <h2>2</h2>
+          <p>Books Not Returned Yet</p>
+        </div>
+        <div class="dashboard-item">
+          <svg>
+            <path
+              d="M12 4c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+            />
+          </svg>
+          <h2>6</h2>
+          <p>Registered Users</p>
+        </div>
+        <div class="dashboard-item">
+          <svg>
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-9c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+            />
+          </svg>
+          <h2>11</h2>
+          <p>Authors Listed</p>
+        </div>
+        <div class="dashboard-item">
+          <svg>
+            <path
+              d="M18 14v-5c0-1.11-.9-2-2-2H8c-1.11 0-2 .9-2 2v5h12zM8 2v2h12V2H8z"
+            />
+          </svg>
+          <h2>6</h2>
+          <p>Listed Categories</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

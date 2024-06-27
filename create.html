@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #23BDEE;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0e6782;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add New Book</h2>
+    <form action="create.php" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="author_id">Author ID:</label>
+        <input type="text" id="author_id" name="author_id" required>
+        
+        <label for="ISBN">ISBN:</label>
+        <input type="text" id="ISBN" name="ISBN">
+        
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre">
+        
+        <label for="publication_year">Publication Year:</label>
+        <input type="text" id="publication_year" name="publication_year">
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
